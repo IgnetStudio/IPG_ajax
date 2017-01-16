@@ -1,16 +1,16 @@
 var xhr = new XMLHttpRequest();
 
-//console.log (xhr.readyState); // 0
+// console.log (xhr.readyState); // 0
 
 xhr.open("GET", "http://ignet.pc.pl/IPG_ajax/test.html", true); // true = asynchronic; extra parameteres possible
 
 // xhr.open("GET", "http://ignet.pc.pl/IPG_ajax/test.html", false); // synchronous
 
-//console.log (xhr.readyState); // 1
+// console.log (xhr.readyState); // 1
 
 xhr.onreadystatechange = function(e) {
     
-//    console.log(this.status);
+// console.log(this.status);
     
     if(this.readyState === 4 && this.status === 200) {
         console.log(this.response);

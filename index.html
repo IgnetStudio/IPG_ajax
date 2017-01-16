@@ -7,6 +7,8 @@
     <title>Ignet Playground: AJAX</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/awsm.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/modernizr-2.8.3.min.js"></script>
 </head>
@@ -15,15 +17,34 @@
     <h3>protokół HTTP</h3>
     <p>request & response</p>
     <h3>typy żądań HTTP</h3>
-    <p>GET (najpopularniejszy)</p>
-    <p>POST (pozwala przesyłać dane)</p>
-    <p>PUT (aktualizacja) </p>
-    <p>DELETE (usunięcie)</p>
-    <p>HEAD (nagłówki)</p>
+    <ul>
+        <li>GET (najpopularniejszy)</li>
+        <li>POST (pozwala przesyłać dane)</li>
+        <li>PUT (aktualizacja)</li>
+        <li>DELETE (usunięcie)</li>
+        <li>HEAD (nagłówki)</li>
+    </ul>
     <h3>Same-origin policy</h3>
     <h3>CORS (Cross-origin resource sharing) - technika która pozwala obejść Same-origin policy </h3>
     <h3>Statusy</h3>
-    <p>200</p> ...
+    <ul>
+        <li>100: Continue</li>
+        <li>101: Switching Protocol</li>
+        <li>103: Checkpoint</li>
+        <li><strong>200: OK</strong></li>
+        <li>201: Crated</li>
+        <li>203: Accepted</li>
+        <li><strong>301: Moved</strong></li>
+        <li>302: Found</li>
+        <li>304: Not Modified</li>
+        <li>400: Bad Request</li>
+        <li>401: Unauthorized</li>
+        <li>403: Forbidden</li>
+        <li><strong>404: Not Found</strong></li>
+        <li><strong>500: Internal Server Error</strong></li>
+        <li>502: Bad Gateway</li>
+        <li>503: Service Unavailable</li>
+    </ul>
     <hr>
     <h2>AJAX test</h2>
     <hr>
@@ -38,9 +59,12 @@
     <progress id="download" max="100" value="0"></progress>
     <h4>Wysyłanie:</h4>
     <progress id="upload" max="100" value="0"></progress>
+    <hr>
+    <h2>AJAX Biblioteka</h2>
     <!--    <script src="js/ajax_basics.js"></script>-->
     <!--    <script src="js/ajax_form.js"></script>-->
-    <script src="js/ajax_progress.js"></script>
+    <!--    <script src="js/ajax_progress.js"></script>-->
+    <script src="js/ajax_lib.js"></script>
 </body>
 
 </html>

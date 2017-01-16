@@ -3,7 +3,7 @@ var xhr = new XMLHttpRequest(),
     downloadProgress = document.querySelector("#download"),
     uploadProgress = document.querySelector("#upload");
 
-xhr.open("POST", "http://ignet.pc.pl/IPG_ajax/receive.php", true);
+xhr.open("POST", "receive.php", true);
 
 xhr.onreadystatechange = function(e) {
 
@@ -17,8 +17,7 @@ xhr.onprogress = function(e) {
 
     if(e.lengthComputable) {
         var percent = (e.loaded / e.total) * 100;
-
-//        console.log(percent); 100
+        // console.log(percent); 100
         downloadProgress.value = percent;
     }
 
@@ -28,8 +27,7 @@ xhr.upload.onprogress = function(e) {
 
     if(e.lengthComputable) {
         var percent = (e.loaded / e.total) * 100;
-
-//        console.log(percent); 100
+        // console.log(percent); 100
         uploadProgress.value = percent;
     }
 

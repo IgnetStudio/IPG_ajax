@@ -1,3 +1,60 @@
 hr {
     height: 5px;
 }
+
+#mailMessage {
+    box-sizing: border-box;
+    display: none;
+    width: 300px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px #000 solid;
+    line-height: 22px;
+    text-align: center;
+}
+
+#mailMessage.error {
+    display: block;
+    border-color: #FA7382;
+    color: #FA3543;
+}
+
+#mailMessage.success {
+    display: block;
+    border-color: #9FFA8A;
+    color: #4BE542;
+}
+
+form {
+    width: 300px;
+    margin: 40px auto;
+}
+
+.inputField {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.inputField input,
+.inputField textarea {
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px #C4C4C4 solid;
+    border-radius: 10px;
+    font: 13px/1 Arial, Tahoma, sans-serif;
+    color: #6E6E6E;
+}
+
+.inputField textarea {
+    height: 180px;
+    padding: 20px;
+    line-height: 20px;
+}
+
+.inputField button {
+    float: right;
+    cursor: pointer;
+}

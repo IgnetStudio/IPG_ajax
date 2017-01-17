@@ -61,10 +61,28 @@
     <progress id="upload" max="100" value="0"></progress>
     <hr>
     <h2>AJAX Biblioteka</h2>
+    <hr>
+    <h2>AJAX mail</h2>
+    <div id="mailMessage"></div>
+    <form id="mailForm" action="mail.php" method="POST">
+        <div class="inputField">
+            <input type="text" name="your-name" placeholder="Twoje imię">
+        </div>
+        <div class="inputField">
+            <input type="text" name="your-email" placeholder="Twój e-mail">
+        </div>
+        <div class="inputField">
+            <textarea name="your-message" placeholder="Twoja wiadomość"></textarea>
+        </div>
+        <div class="inputField">
+            <button type="submit">Wyślij</button>
+        </div>
+    </form>
     <!--    <script src="js/ajax_basics.js"></script>-->
     <!--    <script src="js/ajax_form.js"></script>-->
     <!--    <script src="js/ajax_progress.js"></script>-->
     <script src="js/ajax_lib.js"></script>
+    <script src="js/ajax_mail.js"></script>
 </body>
 
 </html>
